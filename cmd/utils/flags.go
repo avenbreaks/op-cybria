@@ -1837,7 +1837,7 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *ethconfig.Config) {
 		SetDNSDiscoveryDefaults(cfg, params.SepoliaGenesisHash)
 	case ctx.Bool(TrollupFlag.Name):
 		if !ctx.IsSet(NetworkIdFlag.Name) {
-			cfg.NetworkId = 6666
+			cfg.NetworkId = 6661
 		}
 		cfg.Genesis = core.DefaultTrollupGenesisBlock()
 		SetDNSDiscoveryDefaults(cfg, params.TrollupGenesisHash)
