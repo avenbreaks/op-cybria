@@ -6,7 +6,7 @@ set -e -x
 # as user 'root'.
 
 # Install the required tools for creating source packages.
-apt-get -yq --no-install-suggests --no-install-recommends install\
+apt-get -yq --no-install-suggests --no-install-recommends install \
      devscripts debhelper dput fakeroot
 
 # Add the SSH key of ppa.launchpad.net to known_hosts.
